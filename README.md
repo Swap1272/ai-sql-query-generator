@@ -1,12 +1,12 @@
-AI SQL Query Generator
+**AI SQL Query Generator**
 A FastAPI application that generates safe SQL queries from natural language questions using OpenAI models. It also validates queries against unsafe keywords and provides plain‑English explanations of the generated SQL.
 
 🚀 Features
-SQL Generation: Converts user questions into SQL queries.
+SQL Generation: **Converts user questions into SQL queries.**
 
-Validation: Blocks unsafe operations (DELETE, UPDATE, DROP, INSERT, TRUNCATE, ALTER).
+Validation: **Blocks unsafe operations (DELETE, UPDATE, DROP, INSERT, TRUNCATE, ALTER).**
 
-Explanation: Explains SQL queries in simple English.
+Explanation: **Explains SQL queries in simple English.**
 
 REST API: Exposed via FastAPI with /generate endpoint.
 
@@ -23,6 +23,7 @@ ai-sql-query-generator/
 ├── requirements.txt
 ├── Procfile
 ├── README.md
+
 ⚙️ Setup Instructions
 1. Clone the repository
 bash
@@ -90,8 +91,9 @@ json
   "explanation": "This query retrieves all customers who live in New York."
 }
 🔒 Security Note
-The app only allows SELECT queries.
+**The app only allows SELECT queries.**
 
 Unsafe SQL keywords are blocked by the validator.
 
-API key must be set manually by each user — never share or commit it.
+**API key must be set manually by each user — never share or commit it.**
+
