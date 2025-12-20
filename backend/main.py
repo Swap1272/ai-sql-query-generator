@@ -14,8 +14,10 @@ def generate(query: dict):
     )
     validate_sql(sql)
     explanation = explain_sql(sql)
-
     return {
         "sql": sql,
         "explanation": explanation
     }
+
+
+    
